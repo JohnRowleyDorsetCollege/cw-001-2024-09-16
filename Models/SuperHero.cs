@@ -15,5 +15,18 @@ namespace cw_001.Models
         {
             return $"{Name} : {HeroName}";
         }
+
+        public SuperHero()
+        {
+           //Console.WriteLine("Super hero class is created");
+        }
+
+        public SuperHero(string name, string heroName)
+        {
+            HeroName = heroName;
+            Name = name;
+        }
+
+      
     }
 }

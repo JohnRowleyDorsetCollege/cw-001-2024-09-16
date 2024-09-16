@@ -43,6 +43,9 @@ superHero.HeroName = "Captain America";
 
 heroes.Add(superHero);
 
+SuperHero ironMan = new SuperHero("Tony Stark","Ironman");
+heroes.Add(ironMan);
+
 foreach (SuperHero hero in heroes)
 {
     // Console.WriteLine($"Hello, {person.Name}! I am {person.Age} years old");
