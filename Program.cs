@@ -24,7 +24,7 @@ list.Add(p1);
 
 foreach (Person person in list)
 {
-   // Console.WriteLine($"Hello, {person.Name}! I am {person.Age} years old");
+    // Console.WriteLine($"Hello, {person.Name}! I am {person.Age} years old");
     Console.WriteLine(person.ToString());
 }
 
@@ -35,7 +35,7 @@ List<SuperHero> heroes = new List<SuperHero>() {
     new SuperHero(){  Name="David Banner" , HeroName = "The Hulk"},
 };
 
-heroes.Add(new SuperHero() { Name = "Clarke Kent", HeroName = "Superman" } );
+heroes.Add(new SuperHero() { Name = "Clarke Kent", HeroName = "Superman" });
 
 SuperHero superHero = new SuperHero();
 superHero.Name = "Steve Rogers";
@@ -43,7 +43,7 @@ superHero.HeroName = "Captain America";
 
 heroes.Add(superHero);
 
-SuperHero ironMan = new SuperHero("Tony Stark","Ironman");
+SuperHero ironMan = new SuperHero("Tony Stark", "Ironman");
 heroes.Add(ironMan);
 
 foreach (SuperHero hero in heroes)
@@ -53,3 +53,18 @@ foreach (SuperHero hero in heroes)
 }
 
 
+if (myAge > 60)
+{
+    Console.WriteLine("vintage geezer");
+}
+else
+{
+    Console.WriteLine("still maturing");
+}
+
+int day = 4;
+
+Console.WriteLine(Utilities.GetDayOfWeek(day));
+
+
+// Outputs "Thursday" (day 4)
